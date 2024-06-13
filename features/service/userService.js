@@ -55,7 +55,7 @@ const removeUser = async(request) =>{
     }
     await User.deleteOne({email: user.email})
     .then((result) => console.log(result))
-
+    
     return {
         message : `User ${email} has been deleted`
     }

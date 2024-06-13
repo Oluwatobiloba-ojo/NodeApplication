@@ -1,7 +1,7 @@
 require('dotenv').config();
 const Connectdb = require('./features/db/connectDB');
 const express = require('express');
-const port = 6060;
+const port = process.env.PORT;
 const app = express();
 const cors = require("cors");
 const database_Url = process.env.MONGO_URI;

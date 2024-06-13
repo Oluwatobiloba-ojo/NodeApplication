@@ -20,6 +20,7 @@ const userSchema = new Schema({
         require: true,
     }
 });
+
 // model takes in two things one is the description and the other function 
 const User = mongoose.model("User", userSchema);
 
